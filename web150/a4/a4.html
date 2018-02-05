@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grading Program</title>    
+</head>
+<body>
+    <script>
+        
+        //A	88-100
+        //B	80-87
+        //C	68-79
+        //D	60-67
+        //F	< 60
+        //else - “Good bye”
+        
+        var sentinel = 50;
+        
+        while (sentinel >= 0 && sentinel <= 100){
+        
+        grade = prompt("Enter a number grade from 0 to 100 or a larger number to exit");
+            
+        sentinel = grade;
+         
+        if (grade >= 88 && grade <=100) {
+            alert("Number Grade = " + grade + "\nLetter Grade = A");
+        }
+        else if (grade >= 80 && grade <=87) {
+            alert("Number Grade = " + grade + "\nLetter Grade = B");
+        }
+        else if (grade >= 68 && grade <=79) {
+            alert("Number Grade = " + grade + "\nLetter Grade = C");
+        }
+        else if (grade >= 60 && grade <=67) {
+            alert("Number Grade = " + grade + "\nLetter Grade = D");;
+        }
+        else if (grade >= 0 && grade <=59) {
+            alert("Number Grade = " + grade + "\nLetter Grade = F");
+        }
+        else {
+            alert("Good Bye");
+        }
+        }
+
+    </script>
+</body>
+</html>

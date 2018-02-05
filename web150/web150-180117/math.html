@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Object - Math Objects</title>
+    </head>
+    <body>
+
+        <div id="info"></div>
+        
+        <script>
+            
+            var randomNum = Math.random() * 10;
+            
+            randomNum = randomNum.toFixed(2);
+            
+            var el = document.getElementById('info');
+            
+            el.innerHTML = '<h2>random number</h2><p>' + randomNum + '</p>';
+        
+        </script>
+        
+    </body>
+</html>

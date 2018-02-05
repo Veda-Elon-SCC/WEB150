@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color Personality Quiz</title>    
+</head>
+<body>
+    <h1>Color Personality Quiz</h1>
+    
+    <section id="answer"></section>
+    
+    <script>
+        
+    //red - Passionate
+    //orange - Sweet
+    //yellow - Positive
+    //green - Natural
+    //blue - Open
+    //indigo - Thoughtful
+    //violet - Mysterious 
+        
+    var msg;
+        
+    var color = prompt("Personality Quiz... What is your favorite color?");
+        
+    color = color.toLowerCase();
+        
+    switch (color){
+            
+        case 'red':
+            msg = 'You are Passionate.';
+            break;
+            
+        case 'orange':
+            msg = 'You are Sweet.';
+            break;
+            
+        case 'yellow':
+            msg = 'You are Positive.';
+            break;
+            
+        case 'green':
+            msg = 'You are Natural.';
+            break;
+
+        case 'blue':
+            msg = 'You are Open.';
+            break;
+            
+        case 'indigo':
+            msg = 'You are Thoughtful.';
+            break;
+
+        case 'violet':
+            msg = 'You are Mysterious.';
+            break;
+
+        default:
+            msg = 'You are Genuine';
+            break;
+    }
+        
+        var el = document.getElementById('answer');
+        el.textContent = msg;
+
+    </script>
+</body>
+</html>
