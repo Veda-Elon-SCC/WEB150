@@ -6,7 +6,7 @@
 //    else{
 //        elMsg.textContent = "";
 //    }
-//    
+//
 //}
 //
 //var elUserName = document.getElementById('username');
@@ -16,11 +16,11 @@ var elUserName = document.getElementById('username');
 var elMsg = document.getElementById('feedback');
 function checkUserName(minLength){
     if(elUserName.value.length < minLength){
-        elMsg.textContent = "Username must be 4 characters or more.";
+        elMsg.textContent = "Username must be 5 characters or more.";
     }
     else{
-        elMsg.textContent = "";        
+        elMsg.textContent = "";
     }
 }
 elUserName.addEventListener('blur', function(){
-    checkUserName(4);},false);
+    checkUserName(5);},false);
