@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB150 A2</title>
+    </head>
+    <body>
+        
+    <h1>Music Store</h1>
+    
+    <h2>Album Listing</h2>
+      
+    <p id="album1"></p>
+    <p id="album2"></p>
+        
+        <script>
+        
+                function Album (title, artist, inInventory){
+                    
+                    this.title = title;
+                    this.artist = artist;
+                    this.inInventory = inInventory;
+                    this.artistTitle = function(){
+                        return this.artist + ", " + this.title;
+                    };
+                    
+                }
+            
+            var album1 = new Album ("Transient Random Noisebursts with Anouncements", "Stereolab", 5);
+            var album2 = new Album ("Space Age Bachelor Pad Music", "Stereolab", 2); 
+            
+            var albumInfo1 = album1.artistTitle() + ", " + "Copies Available: " + album1.inInventory;
+            
+            var albumInfo2 = album2.artistTitle() + ", " + "Copies Available: " + album2.inInventory;
+            
+            
+            var elBook1 = document.getElementById('album1');
+            elBook1.textContent = albumInfo1;
+            var elBook2 = document.getElementById('album2');
+            elBook2.textContent = albumInfo2;
+        
+        </script>    
+    
+    </body>
+</html>

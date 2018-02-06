@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB150 A1</title>    
+</head>
+<body>
+    <h1>Invoice Calculator</h1>
+    <p id="invAmnt"></p>
+    <p id="invPlsTax"></p>
+    <p id="output1"></p>
+    <p id="output2"></p>
+
+    <script>
+        //Ask for the first number.
+        var invAmnt = parseFloat(prompt("Please enter the invoice amount: "));
+        
+        var invPlsTax = (invAmnt * 0.1) + invAmnt ;
+        
+        document.getElementById("output1").innerHTML = "The amount you entered is: $" + invAmnt.toFixed(2);
+        
+        document.getElementById("output2").innerHTML = "The total at a 10% tax rate is: $" + invPlsTax.toFixed(2);
+                
+    </script>
+</body>
+</html>

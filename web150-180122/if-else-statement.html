@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Decisions</title>    
+</head>
+<body>
+    <h1>Bullseye</h1>
+    <section id="answer"></section>
+
+    <script>
+        var score = 75;  //score
+        var msg;
+        
+        if (score > 50) {
+            msg = 'Congratulations!';
+            msg += ' Procede to the next round.';
+        }
+        else {
+            msg = 'Have another go!';
+        }
+        
+        var el = document.getElementById('answer');
+        el.textContent = msg;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loops - For Loop</title>    
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script>
+        
+        var scores = [24, 32, 17, 6, 23, 14, 53, 22];
+        var arrayLength = scores.length;
+        var roundNumber = 0;
+        var msg = ' ';
+        
+        for (var i = 0; i < arrayLength; i++) {
+            
+            roundNumber = (i + 1);
+            
+            msg += 'Round ' + roundNumber + ': ';
+            
+            msg += scores[i] + '<br />';
+        }
+        
+        document.getElementById('result').innerHTML = msg;
+
+    </script>
+</body>
+</html>

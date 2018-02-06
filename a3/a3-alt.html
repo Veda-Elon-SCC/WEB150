@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB150 A3</title>    
+</head>
+<body>
+    <h1>Login Name Creator</h1>
+    <p id="firstName"></p>
+    <p id="lastName"></p>
+    <p id="loginName"></p>
+
+    <script>
+        //ask for names
+        var name = prompt("Please enter your first and last names, seperated by a space: ");
+        
+        //split names
+        var splitNames = name.split(" ");
+        
+        // assign split sections ti ne variables
+        var firstName = splitNames[0];
+        var lastName = splitNames[1];
+        
+        //output names
+        document.getElementById("firstName").innerHTML = "The first name you entered is: " + firstName;
+        document.getElementById("lastName").innerHTML = "The last name you entered is: " + lastName;
+        
+        //slice and concatinate names    
+        var loginName = firstName.slice(0,1) + lastName.slice(0,4);
+        loginName = loginName.toLocaleLowerCase();
+        
+        //0utput login name
+        document.getElementById("loginName").innerHTML = "The login name is: " + loginName;
+    </script>
+</body>
+</html>
